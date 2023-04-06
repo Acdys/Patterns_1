@@ -19,19 +19,19 @@ public class DataGenerator {
         return LocalDate.now().plusDays(shift).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
-    public static String generateCity(String locale) {
+    public static String generateCity(String ignoredLocale) {
         // TODO: добавить логику для объявления переменной city и задания её значения, генерацию можно выполнить
         // с помощью Faker, либо используя массив валидных городов и класс Random
         return faker.address().city();
     }
 
-    public static String generateName(String locale) {
+    public static String generateName(String ignoredLocale) {
         // TODO: добавить логику для объявления переменной name и задания её значения, для генерации можно
         // использовать Faker
         return faker.name().fullName();
     }
 
-    public static String generatePhone(String locale) {
+    public static String generatePhone(String ignoredLocale) {
         // TODO: добавить логику для объявления переменной phone и задания её значения, для генерации можно
         // использовать Faker
         return faker.phoneNumber().phoneNumber();
